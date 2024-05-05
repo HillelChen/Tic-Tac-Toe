@@ -4,7 +4,7 @@ import Board from './Components/Board'
 
 export default function App() {
   return (
-    <div>
+    <div className='app'>
       <Board/>
       working
       <Button />
