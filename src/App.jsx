@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div>
       working
-      <Button />
+      <Button children={'play solo'} />
     </div>
   )
 }
