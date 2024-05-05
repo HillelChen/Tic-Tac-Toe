@@ -7,10 +7,18 @@ import Back from './Components/Back'
 
 export default function App() {
   return (
-    <div>
+
+    <div className='app'>
+  
   <Back/>
       <Board/>
       working
+
+   
+      <Button children={'play solo'} />
+      <Or />
+
+
       <Button children={'play solo'} />
       <Or/>
     </div>
