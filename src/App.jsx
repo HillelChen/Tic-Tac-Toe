@@ -16,6 +16,8 @@ export default function App() {
    
       <Button children={'play solo'} />
       <Or />
+      <X />
+      <O />
 
       <Button children={'play solo'} />
       <Or/>
