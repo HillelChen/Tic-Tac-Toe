@@ -1,0 +1,27 @@
+.button {
+    /* Play solo */
+
+    /* position: absolute; */
+    width: 1020px;
+    height: 303px;
+    left: 152px;
+    top: 1313px;
+
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    border: 10px solid #B28100;
+
+
+    background-color: yellow;
+
+
+}
