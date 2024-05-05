@@ -7,6 +7,7 @@ export default function App() {
     <div>
       <Button children={'play solo'} />
       <Or />
+
       <Button children={'play solo'} />
     </div>
   )
