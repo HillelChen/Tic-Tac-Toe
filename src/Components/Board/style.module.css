@@ -1,6 +1,7 @@
 .Board {
   margin: 10px;
-  width: 380px;
+  min-width: 258px;
+  max-width: 600px;
   height: fit-content;
   padding: 10px;
   border: solid 8px black;
@@ -9,6 +10,10 @@
   font-size: 50px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-content: center;
+  gap: 3px;
+
   background-color: white;
 }

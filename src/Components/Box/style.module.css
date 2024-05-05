@@ -1,0 +1,12 @@
+.Box{
+    min-width: 70px;
+    max-width: 150px;
+    min-height: 50px;
+    aspect-ratio: 1/1;
+    background-color:#C9F9FC;
+    border: solid 3px black;
+    flex: 0 0 calc(33.33% - 10px);
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
