@@ -1,9 +1,8 @@
 import React from 'react'
 import Button from './Components/Button/Index'
 import Or from './Components/Or/Index'
-import Board from './Components/Board'
-import HeadComp from './Components/HeadComp'
-import Back from './Components/Back'
+import X from './Components/X/Index'
+import O from './Components/O/Index'
 
 export default function App() {
   return (
@@ -17,7 +16,6 @@ export default function App() {
    
       <Button children={'play solo'} />
       <Or />
-
 
       <Button children={'play solo'} />
       <Or/>

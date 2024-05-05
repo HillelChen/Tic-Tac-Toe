@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.x {
+    color: rgba(255, 213, 0, 0.859);
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 1200;
+    font-size: 250px;
+    -webkit-text-stroke: #0a0700 15px;
+    /* box-shadow: -3px 12px 0px 23px black; */
+
+
+    /* border-color: black; */
+}
