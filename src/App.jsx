@@ -7,7 +7,7 @@ export default function App() {
     <div className='app'>
       <Board/>
       working
-      <Button />
+      <Button children={'play solo'} />
     </div>
   )
 }
