@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  text-align: center;
   gap: 3px;
   background-color: white;
 }
