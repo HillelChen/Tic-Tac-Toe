@@ -6,3 +6,4 @@ export default function X() {
         <div className={styles.x}>X</div>
     )
 }
+
