@@ -7,6 +7,7 @@ let cnt = 2;
 export default function Board() {
   const [gameStatus, setGameStatus] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8]);
   const [win, setWin] = useState(false);
+  console.log(win);
   const handleWin = (index, gameStatus) => {
     console.log("handleWin:", gameStatus);
     let i = index;
@@ -50,7 +51,6 @@ export default function Board() {
     if (cnt > 6) {
       console.log("cheak if win");
       handleWin(index, gameStatus);
-      console.log(win);
     }
   };
 
