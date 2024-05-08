@@ -5,7 +5,7 @@ import styles from "./style.module.css"
 export default function index() {
   return (
     <div className={styles.back}>
-         <LuUndo />
+      <LuUndo className={styles.backarrow} />
     </div>
   )
 }

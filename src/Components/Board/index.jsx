@@ -4,10 +4,11 @@ import Box from "../Box";
 import X from "../X/Index";
 
 let cnt = 0;
+
 export default function Board() {
-  // debugger
   const [gameStatus, setGameStatus] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8]);
   const [win, setWin] = useState(false);
+  // let cnt = 0;
 
   console.log({ win });
 
@@ -39,13 +40,7 @@ export default function Board() {
       setWin(true);
 
     // בדיקת נכונות אלכסון מימין לשמאל
-    // אם שורה ועוד עמודה =2 ולבדוק איזה שורה
-    // else if ((i == 2) || (i == 4) || (i == 6) && (gameStatus[2] == gameStatus[4]) && (gameStatus[4] == gameStatus[6]))
-
     else if (((line2 + column) == 2) && (gameStatus[2] == gameStatus[4]) && (gameStatus[2] == gameStatus[6]))
-
-      // else if ((i == 2) || (i == 4) || (i == 6) && (gameStatus[2] == gameStatus[4]) && (gameStatus[4] == gameStatus[6]))
-
       setWin(true);
 
 
@@ -54,30 +49,28 @@ export default function Board() {
 
 
   const handleBoxClick = (index) => {
-    // if (gameStatus[index] >= 0 && gameStatus[index] <= 8) {
-    cnt = cnt + 1;
+    if (gameStatus[index] >= 0 && gameStatus[index] <= 8) {
+      cnt = cnt + 1;
 
-    const newGameStatus = [...gameStatus];
-    // newGameStatus[index] = <X />;
+      const newGameStatus = [...gameStatus];
+      newGameStatus[index] = cnt % 2 === 0 ? "o" : "x";
 
+      setGameStatus(newGameStatus);
 
-    // cnt % 2 == 0
-    //   ? (newGameStatus[index] = "o")
-    //   : (newGameStatus[index] = "x");
-    // console.log(newGameStatus);
-    newGameStatus[index] = cnt % 2 === 0 ? "o" : "x";
+      // newGameStatus[index] = <X />;
+      // cnt % 2 == 0
+      //   ? (newGameStatus[index] = "o")
+      //   : (newGameStatus[index] = "x");
+      // console.log(newGameStatus);
 
-
-
-    setGameStatus(newGameStatus);
-    // }
-
-    if (cnt > 4) {
-      console.log("cheak if win");
-      handleWin(index, newGameStatus);
-      // handleWin(index, gameStatus);
-      // console.log(win, 'for ', index);
+      if (cnt > 4) {
+        console.log("cheak if win");
+        handleWin(index, newGameStatus);
+        // handleWin(index, gameStatus);
+        // console.log(win, 'for ', index);
+      }
     }
+
 
   };
 
