@@ -4,7 +4,7 @@ import Or from "./Components/Or/Index";
 import X from "./Components/X/Index";
 import O from "./Components/O/Index";
 import Back from "./Components/Back";
-import Board from "./Components/Board";
+import Board from './Components/Board';
 
 export default function App() {
   return (

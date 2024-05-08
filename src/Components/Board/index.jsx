@@ -38,6 +38,16 @@ export default function Board() {
     else if (line2 == column && (gameStatus[0] == gameStatus[4]) && (gameStatus[4] == gameStatus[8]))
       setWin(true);
 
+    // בדיקת נכונות אלכסון מימין לשמאל
+    // אם שורה ועוד עמודה =2 ולבדוק איזה שורה
+    // else if ((i == 2) || (i == 4) || (i == 6) && (gameStatus[2] == gameStatus[4]) && (gameStatus[4] == gameStatus[6]))
+
+    else if (((line2 + column) == 2) && (gameStatus[2] == gameStatus[4]) && (gameStatus[2] == gameStatus[6]))
+
+      // else if ((i == 2) || (i == 4) || (i == 6) && (gameStatus[2] == gameStatus[4]) && (gameStatus[4] == gameStatus[6]))
+
+      setWin(true);
+
 
     else console.log("continue");
   };
