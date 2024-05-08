@@ -3,9 +3,8 @@ import Button from './Components/Button/Index'
 import Or from './Components/Or/Index'
 import X from './Components/X/Index'
 import O from './Components/O/Index'
-import Board from './Components/Board'
-// import Box from './Components/Box'
 import Back from './Components/Back'
+import Board from './Components/Board'
 
 export default function App() {
   return (
@@ -17,13 +16,12 @@ export default function App() {
 
 
 
-      {/* <Button children={'play solo'} /> */}
+      <Button children={'play solo'} />
       {/* <Or /> */}
-      {/* <X /> */}
-      {/* <O /> */}
+      {/* <X />
+      <O /> */}
 
-      {/* <Button children={'play solo'} /> */}
-      {/* <Or /> */}
+
     </div>
   )
 }
