@@ -1,25 +1,20 @@
 import React from "react";
-import Button from "./Components/Button/Index";
-import Or from "./Components/Or/Index";
-import X from "./Components/X/Index";
-import O from "./Components/O/Index";
-import Back from "./Components/Back";
-import Board from './Components/Board';
+import GameBoard from "./Pages/GameBoard";
 import Home from "./Pages/Home";
+import { Route, Routes } from "react-router-dom";
 
 
 
 export default function App() {
   return (
     <div className='app'>
-      <Home />
-      {/* <Back />
-      <Board /> */}
+     <Routes>
+<Route index element = {<Home/>}/>
+<Route path = "gameBoard" element = {<GameBoard/>}/>
 
-      {/* <Button children={"play solo"} /> */}
-      {/* <Or /> */}
-      {/* <X />
-      <O /> */}
-    </div>
+     </Routes>
+     
+     
+      </div>
   );
 }
