@@ -17,7 +17,10 @@ export default function Home() {
                 <Link to='/GameBoard'>
                     <Button>{'PLAY SOLO'}</Button>
                 </Link>
-                <Button>{'PLAY WITH A FRIEND'}</Button>
+
+                <Link to='./joinorcreat' >
+                    <Button>{'PLAY WITH A FRIEND'}</Button>
+                </Link>
             </div>
         </>
 

@@ -80,7 +80,7 @@ export default function Board() {
 
   return (
 
-    <div className={styles.Board}>
+    <div className={`${styles.Board} Board`}>
       {gameStatus.map((value, index) => (
         <Box
           onClick={() => handleBoxClick(index)}

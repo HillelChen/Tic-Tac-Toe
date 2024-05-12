@@ -9,6 +9,8 @@ import Home from "./Pages/Home";
 import { Route, Routes } from "react-router-dom";
 // import Home from "./Pages/Home";
 import GameBoard from "./Pages/GameBoard"
+import JoinOrCreat from "./Pages/JoinOrCreat";
+import Waiting from "./Pages/Waiting";
 
 
 
@@ -18,6 +20,8 @@ export default function App() {
     <Routes>
       <Route index element={<Home />} />
       <Route path="GameBoard" element={<GameBoard />} />
+      <Route path="joinorcreat" element={<JoinOrCreat />} />
+      <Route path="waiting" element={<Waiting />} />
 
     </Routes>
   );
