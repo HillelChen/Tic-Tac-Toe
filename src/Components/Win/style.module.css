@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+.Win{
+    min-width: 70px;
+    max-width: 150px;
+    min-height: 50px;
+    aspect-ratio: 1/1;
+    background-color:#C9F9FC;
+    border: solid 3px black;
+    flex: 0 0 calc(33.33% - 10px);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: -1px 1px  black;
+
+    color: rgba(255, 213, 0, 0.859);
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 1200;
+    font-size: 120px;
+    -webkit-text-stroke: #0a0700 10px;
+    /* box-shadow: -3px 12px 0px 23px black; */
+
+
+    /* border-color: black; */
+}

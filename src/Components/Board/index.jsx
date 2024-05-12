@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 import Box from "../Box";
 import X from "../X/Index";
+import Win from "../Win";
 
 let cnt = 0;
 
@@ -29,25 +30,31 @@ export default function Board() {
 
     // בודק נכונות שורות
     if ((gameStatus[line] == gameStatus[line + 1]) && (gameStatus[line] == gameStatus[line + 2]))
+    setTimeout(() => {
       setWin(true);
+    }, 1000);
 
     // בודק נכונות עמודות
     else if ((gameStatus[column] == gameStatus[column + 3]) && (gameStatus[column] == gameStatus[column + 6]))
+    setTimeout(() => {
       setWin(true);
+    }, 1000);
 
     // בדיקת נכונות אלכסון משמאל לימין
     else if (line2 == column && (gameStatus[0] == gameStatus[4]) && (gameStatus[4] == gameStatus[8]))
+    setTimeout(() => {
       setWin(true);
+    }, 1000);
 
     // בדיקת נכונות אלכסון מימין לשמאל
     else if (((line2 + column) == 2) && (gameStatus[2] == gameStatus[4]) && (gameStatus[2] == gameStatus[6]))
+    setTimeout(() => {
       setWin(true);
+    }, 1000);
 
-
+   
     else console.log("continue");
   };
-
-
   const handleBoxClick = (index) => {
     if (gameStatus[index] >= 0 && gameStatus[index] <= 8) {
       cnt = cnt + 1;
@@ -73,7 +80,6 @@ export default function Board() {
 
 
   };
-
   console.log({ gameStatus });
   console.log("cnt:", cnt);
   console.log('******************************************')
@@ -82,13 +88,19 @@ export default function Board() {
 
     <div className={`${styles.Board} Board`}>
       {gameStatus.map((value, index) => (
-        <Box
+       !win? <Box
           onClick={() => handleBoxClick(index)}
           gameStatus={gameStatus}
           key={index}
           value={
             gameStatus[index] == "x" ? "x" : gameStatus[index] == "o" ? "o" : ""
           }
+        />:<Win 
+        gameStatus={gameStatus}
+        key={index}
+        value={
+          gameStatus[index] == "x" ? "x" : gameStatus[index] == "o" ? "o" : ""
+        }
         />
       ))}
 
