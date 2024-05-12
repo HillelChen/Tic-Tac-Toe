@@ -1,10 +1,10 @@
 import React from 'react'
 import Board from '../../Components/Board'
 
-export default function GameBoard() {
-  return (
-    <div>
-        <Board/>
-    </div>
-  )
+export default function index() {
+    return (
+        <div>
+            <Board />
+        </div>
+    )
 }

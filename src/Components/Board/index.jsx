@@ -55,8 +55,6 @@ export default function Board() {
    
     else console.log("continue");
   };
-
-
   const handleBoxClick = (index) => {
     if (gameStatus[index] >= 0 && gameStatus[index] <= 8) {
       cnt = cnt + 1;
@@ -82,14 +80,13 @@ export default function Board() {
 
 
   };
-
   console.log({ gameStatus });
   console.log("cnt:", cnt);
   console.log('******************************************')
 
   return (
 
-    <div className={styles.Board}>
+    <div className={`${styles.Board} Board`}>
       {gameStatus.map((value, index) => (
        !win? <Box
           onClick={() => handleBoxClick(index)}
