@@ -5,11 +5,12 @@ import X from "../X/Index";
 import Win from "../Win";
 
 let cnt = 0;
+
 export default function Board() {
-  // debugger
   const [gameStatus, setGameStatus] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8]);
   const [win, setWin] = useState(false);
-  const [showWinMessage, setShowWinMessage] = useState(false);
+  // let cnt = 0;
+
   console.log({ win });
 
   const handleWin = (index, gameStatus) => {
@@ -45,36 +46,40 @@ export default function Board() {
       setWin(true);
     }, 1000);
 
+    // בדיקת נכונות אלכסון מימין לשמאל
+    else if (((line2 + column) == 2) && (gameStatus[2] == gameStatus[4]) && (gameStatus[2] == gameStatus[6]))
+    setTimeout(() => {
+      setWin(true);
+    }, 1000);
 
+   
     else console.log("continue");
   };
 
 
   const handleBoxClick = (index) => {
-    // if (gameStatus[index] >= 0 && gameStatus[index] <= 8) {
-    cnt = cnt + 1;
+    if (gameStatus[index] >= 0 && gameStatus[index] <= 8) {
+      cnt = cnt + 1;
 
-    const newGameStatus = [...gameStatus];
-    // newGameStatus[index] = <X />;
+      const newGameStatus = [...gameStatus];
+      newGameStatus[index] = cnt % 2 === 0 ? "o" : "x";
 
+      setGameStatus(newGameStatus);
 
-    // cnt % 2 == 0
-    //   ? (newGameStatus[index] = "o")
-    //   : (newGameStatus[index] = "x");
-    // console.log(newGameStatus);
-    newGameStatus[index] = cnt % 2 === 0 ? "o" : "x";
+      // newGameStatus[index] = <X />;
+      // cnt % 2 == 0
+      //   ? (newGameStatus[index] = "o")
+      //   : (newGameStatus[index] = "x");
+      // console.log(newGameStatus);
 
-
-
-    setGameStatus(newGameStatus);
-    // }
-
-    if (cnt > 4) {
-      console.log("cheak if win");
-      handleWin(index, newGameStatus);
-      // handleWin(index, gameStatus);
-      // console.log(win, 'for ', index);
+      if (cnt > 4) {
+        console.log("cheak if win");
+        handleWin(index, newGameStatus);
+        // handleWin(index, gameStatus);
+        // console.log(win, 'for ', index);
+      }
     }
+
 
   };
 
