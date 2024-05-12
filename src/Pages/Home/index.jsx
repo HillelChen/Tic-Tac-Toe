@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 
 
-export default function Home() { 
+export default function Home() {
     return (
 
         <>
@@ -16,7 +16,7 @@ export default function Home() {
                     <Button>{'PLAY SOLO'}</Button>
                 </Link>
                 <Link to='/JoinGame'>
-                <Button  >{'PLAY WITH A FRIEND'}</Button>
+                    <Button  >{'PLAY WITH A FRIEND'}</Button>
                 </Link>
             </div>
         </>

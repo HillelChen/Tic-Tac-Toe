@@ -1,0 +1,46 @@
+.font {
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30x;
+    justify-content: center;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+    -webkit-text-stroke: #0a0700 2px;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30x;
+    justify-content: center;
+    color: #c5c0c0;
+    letter-spacing: -1px;
+    -webkit-text-stroke: #0a0700 2px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.onBox {
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30x;
+    justify-content: center;
+    color: #FFFFFF;
+    letter-spacing: -1.5px;
+    -webkit-text-stroke: #0a0700 2px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -27px;
+}
