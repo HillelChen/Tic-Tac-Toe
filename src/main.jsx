@@ -8,7 +8,7 @@ import { SocketProvider } from './socket.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <SocketProvider>
-        <App />
+            <App />
         </SocketProvider>
     </BrowserRouter>
 

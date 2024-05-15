@@ -5,7 +5,7 @@ import styles from "./style.module.css"
 
 export default function HeadComp() {
   return (
-    <div >
+    <div className={`${styles.head} empty`}  >
 
     </div>
   )

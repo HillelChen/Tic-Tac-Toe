@@ -1,7 +1,16 @@
-.back{
-  width: 60px;
-  height: 60px;
-
-    background-color: #FCD015;
-    box-shadow: 1px 0px #FBB500;
+.back {
+  font-size: 25px;
+  align-self: flex-start;
+  margin: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #fcd015;
+  -webkit-text-stroke: #B28100 2px;
+  /* box-shadow: 1px 0px #fbb500; */
+  border-radius: 7px;
+ 
 }

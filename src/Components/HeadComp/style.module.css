@@ -1,0 +1,9 @@
+.head{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    border: #FCD015 solid 1px;
+    align-self: center;
+    background-color:  #FCD015;
+}

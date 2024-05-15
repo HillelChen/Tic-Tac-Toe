@@ -2,5 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+}
+.homeButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
