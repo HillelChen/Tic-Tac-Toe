@@ -2,7 +2,8 @@ import React from 'react'
 import Button from '../../Components/Button/Index'
 // import styles from "./style.module.css"
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
+import Welcome from '../../Components/Welcome';
+import styles from "./style.module.css"
 // import Board from '../Components/Board';
 
 
@@ -10,7 +11,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 export default function Home() {
     return (
 
-        <>
+        <div className={styles.home}>
+        <Welcome/>
             <div className='homeButton'>
                 <Link to='/GameBoard'>
                     <Button>{'PLAY SOLO'}</Button>
@@ -19,7 +21,7 @@ export default function Home() {
                     <Button  >{'PLAY WITH A FRIEND'}</Button>
                 </Link>
             </div>
-        </>
+        </div>
 
     )
 }

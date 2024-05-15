@@ -10,6 +10,7 @@ import Waiting from './Pages/Waiting'
 
 
 
+
 export default function App() {
   return (
     <Routes>
