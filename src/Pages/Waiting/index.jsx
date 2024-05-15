@@ -1,15 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Board from '../../Components/Board'
 import styles from "./style.module.css"
 import useSocket from '../../socket'
 
 
 export default function Waiting() {
-    const { socket } = useSocket()
+    const socket = useSocket()
 
     useEffect(() => {
-        socket.emit('create-room')
-
+        socket.emit('create-room', {});
+        console.log('good morning');
+        socket.on('id', (data) => console.log(data))
     }, [])
 
 
